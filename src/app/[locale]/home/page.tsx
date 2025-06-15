@@ -6,8 +6,8 @@ export default function Home({
 }: {
   params: { locale: SupportedLocale };
 }) {
-  // Link to home page in the locale which is not the current one
   const otherLocale = params.locale === "en" ? "ka" : "en";
+
   const otherLocaleLink = `/${otherLocale}/home`;
 
   const t = translations[params.locale] || translations.en;
